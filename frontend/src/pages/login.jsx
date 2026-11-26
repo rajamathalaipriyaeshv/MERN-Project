@@ -1,3 +1,4 @@
+import './login.css'
 import { useState } from 'react'
 import chennaiimg from '../assets/Chennai_Central.jpg'
 function Login(){
@@ -13,7 +14,7 @@ function Login(){
     <div className='text-yellow-500 text-5xl font-medium text-center uppercase'>Chennai</div>
     <div className='flex flex-col items-center justify-center'>
     <img src={chennaiimg} alt='Chennai' className='w-auto h-auto'/>
-    </div><br></br>
+    </div>
 
     <form onSubmit={(e)=>formsubmit(e)}className='ml-10 mb-1.5'>
       <label className="text-sm font-medium text-slate-900 mb-1">Enter Email:  </label>
