@@ -8,11 +8,13 @@ import Clint from './pages/clint'
 import Dash from './pages/dash'
 import Calender from './pages/calender'
 import Set from './pages/set'
+import Register from './pages/register'
 function App() {
   
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/register" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/project" element={<Project/>}/>
         <Route path="/task" element={<Task/>}/>
