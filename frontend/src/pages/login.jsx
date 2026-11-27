@@ -3,12 +3,11 @@ import { useState } from 'react'
 import chennaiimg from '../assets/Chennai_Central.jpg'
 import {useNavigate} from 'react-router-dom'
 function Login(){
-
   const[formdata,setFormdata]=useState({
     email:"",
     pass:""
   })
-
+  
   const navigate = useNavigate()
 
   const formsubmit = (e)=>{
