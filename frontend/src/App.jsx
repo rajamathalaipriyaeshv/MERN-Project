@@ -9,11 +9,16 @@ import Dash from './pages/dash'
 import Calender from './pages/calender'
 import Set from './pages/set'
 import Register from './pages/register'
+import Admin from './pages/admin/adminlayout'
+import Admindash from './pages/admin/dash'
+import Userdetails from './pages/admin/userdetails'
+import Setting from './pages/admin/setting'
 function App() {
   
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/project" element={<Project/>}/>
@@ -23,6 +28,11 @@ function App() {
         <Route path="/dash" element={<Dash/>}/>
         <Route path="/calender" element={<Calender/>}/>
         <Route path="/set" element={<Set/>}/>
+        <Route path="/admin" element={<Admin/>}>
+          <Route path="dash" element={<Admindash/>}/>
+          <Route path="userdetails" element={<Userdetails/>}/>
+          <Route path="setting" element={<Setting/>}/>
+        </Route>
       </Routes>
     </BrowserRouter>
   )
