@@ -1,4 +1,3 @@
-import './project.css'
 import world from '../assets/world.webp'
 function Project(){
     return(

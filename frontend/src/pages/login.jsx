@@ -1,4 +1,3 @@
-import './login.css'
 import { useState } from 'react'
 import chennaiimg from '../assets/Chennai_Central.jpg'
 import {useLocation, useNavigate} from 'react-router-dom'
