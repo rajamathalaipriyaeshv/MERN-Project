@@ -23,7 +23,7 @@ function Register() {
       <form onSubmit={handleSubmit(onSubmit)} className="w-77 mx-auto mt-15 p-3 pt-4 flex flex-col items-start gap-4 bg-slate-50 rounded shadow-2xl shadow-slate-400 border-2 border-gray-100">
         <div className="flex items-center gap-10">
           <label htmlFor="name" className="text-sm font-bold text-slate-900">Name:</label>
-          <input id="name" type="email" {...register("name")} className="border border-slate-300 rounded-xl px-2 py-1"/>
+          <input id="name" type="text" {...register("name")} className="border border-slate-300 rounded-xl px-2 py-1"/>
         </div>
         <p className="text-red-500 text-sm">{errors.name?.message}</p>
 
@@ -35,13 +35,13 @@ function Register() {
 
         <div className="flex items-center gap-4">
           <label htmlFor="pass" className="text-sm font-bold text-slate-900">Password:</label>
-          <input id="pass" type="email" {...register("pass")} className="border border-slate-300 rounded-xl px-2 py-1"/>
+          <input id="pass" type="password" {...register("pass")} className="border border-slate-300 rounded-xl px-2 py-1"/>
         </div>
         <p className="text-red-500 text-sm">{errors.pass?.message}</p>
 
         <div className="flex items-center gap-13">
           <label htmlFor="age" className="text-sm font-bold  text-slate-900">Age:</label>
-          <input id="age" type="password" {...register("age")} className="border border-slate-300 rounded-xl px-2 py-1"/>
+          <input id="age" type="number" {...register("age")} className="border border-slate-300 rounded-xl px-2 py-1"/>
         </div>
         <p className="text-red-500 text-sm">{errors.age?.message}</p>
 

@@ -44,7 +44,7 @@ function Login(){
     <img src={chennaiimg} alt='Chennai' className='mt-5  mx-auto w-75 h-auto border-2 border-gray-300 rounded-2xl shadow-black shadow-2xl'/>
     </div>
 
-    <form onSubmit={onSubmit} className="w-fit mx-auto mt-15 p-6 pl-5 pr-5 flex flex-col items-end gap-5 bg-slate-50 rounded shadow-2xl border-2 border-gray-100" shadow-2xl>
+    <form onSubmit={onSubmit} className="w-fit mx-auto mt-15 p-6 pl-5 pr-5 flex flex-col items-end gap-5 bg-slate-50 rounded shadow-2xl border-2 border-gray-100">
     <div className="flex items-center gap-3">
     <label className="text-sm font-bold text-slate-900">Email:</label>
     <input type="email" name="email" onChange={handleChanges} className="border border-slate-300 w-44 rounded-xl px-2 py-1"/>
